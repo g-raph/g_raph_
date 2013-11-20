@@ -102,7 +102,6 @@
     <?php print render($page['header_bottom']); ?>
   </div>
 </div>
-
 <!-- menubox -->
 <div id="menubox-top" class="outerbox">
   <div id="menubox-top-inner" class="inner clearfix">
@@ -120,7 +119,6 @@
     <?php print render($page['menu_bottom']); ?>
   </div>
 </div>
-
 <!-- preface -->
 <div id="preface-top" class="outerbox">
   <div id="preface-top-inner" class="inner clearfix">
@@ -132,7 +130,6 @@
       <?php print render($page['preface_bottom']); ?>      
   </div>
 </div>
-
 <!-- content -->
 <div id="content" class="outerbox">
   <div id="content-inner" class="inner clearfix">
@@ -157,23 +154,10 @@
     </div>
   </div>
 </div>
-
-<!-- post -->
+<!-- postscript -->
 <div id="post-top" class="outerbox">
   <div id="post-top-inner" class="inner clearfix">
     <?php print render($page['post_top']); ?>
-  </div>
-</div>
-<!-- news -->
-<div id="post-news" class="outerbox">
-  <div id="post-news-inner" class="inner clearfix">
-    <?php print render($page['post_news']); ?>
-  </div>
-</div>
-<!-- events -->
-<div id="post-events" class="outerbox">
-  <div id="post-events-inner" class="inner clearfix">
-    <?php print render($page['post_events']); ?>
   </div>
 </div>
 <div id="post-middle" class="outerbox">
@@ -181,21 +165,11 @@
     <?php print render($page['post_middle']); ?>
   </div>
 </div>
-<!-- team -->
-<div id="post-team" class="outerbox">
-  <div id="post-team-inner" class="inner clearfix">
-    <?php print render($page['post_team']); ?>
-  </div>
-</div>
-<!-- contact -->
-<h2 id="front-title-contact"><span>Contacteer</span>Ons</h2>
 <div id="post-bottom" class="outerbox">
-  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.be/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=Alexander+Franckstraat+47-49+B-2530+Boechout&amp;aq=&amp;sll=51.09623,4.227975&amp;sspn=1.714563,3.35907&amp;ie=UTF8&amp;hq=&amp;hnear=Alexander+Franckstraat+47,+2530+Boechout,+Antwerpen,+Vlaams+Gewest&amp;ll=51.159419,4.496912&amp;spn=0.107012,0.209942&amp;t=m&amp;z=13&amp;output=embed"></iframe>
   <div id="post-bottom-inner" class="inner clearfix">
     <?php print render($page['post_bottom']); ?>
   </div>
 </div>
-
 <!-- footer -->
 <div id="footer-top" class="outerbox">
   <div id="footer-top-inner" class="inner clearfix">
