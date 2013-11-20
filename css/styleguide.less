@@ -1,0 +1,174 @@
+// vars
+
+@red: #ee333a;
+
+// styleguide
+
+* {
+	font-family: helvetica, arial;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+a {
+  color: @red;
+  text-decoration: none;
+  &:hover {
+    color: #333;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+div.messages {
+  margin: 0 0 30px;
+  border: none;
+  padding: 15px 0;
+  border-radius: 4px;
+  background-image: none;
+  text-align: center;
+}
+
+.node-readmore,
+.more-link,
+.field-name-node-link {
+  a {
+    color: white;
+    background: @red;
+    border-radius: 4px;
+    padding: 2px 7px;
+    margin: 0;
+    font-size: 11px;
+    &:hover {
+      background: #404040;
+    }
+  }
+}
+
+#breadcrumb {
+  margin: 0 0 30px;
+  clear: both;
+  #breadcrumb-inner {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    a {
+      color: #fff;
+      &:hover {
+        color: #404040;
+      }
+    }
+  }
+}
+
+.field .field-label {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
+  font-weight: 400;
+}
+
+input {
+  &.form-text {
+    padding: 6px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #eee;
+  }
+}
+
+.tabs {
+  clear: both;
+  margin: 30px 0;
+  position: relative;
+  z-index: 5;
+  > ul {
+    background: none;
+    padding: 0;
+    width: 100%;
+    border: none;
+    li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      float: none;
+      &.active {
+        a {
+          background: @red;
+          position: relative;
+          border: none;
+          color: #fff;
+          padding: 5px 10px;
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            margin-left: -8px;
+            border-top: 8px solid @red;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+          }
+        }
+      }
+      a {
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        border: none;
+        color: #333;
+        padding: 5px 10px;
+        &.active {
+          background: @red;
+          color: #fff;
+          position: relative;
+          &:hover {
+            background: @red;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            margin-left: -8px;
+            border-top: 8px solid @red;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+          }
+        }
+        &:hover {
+          background: #333;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.outerbox {
+  padding: 20px 0;
+}
