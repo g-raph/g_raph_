@@ -1,8 +1,8 @@
-Gebruiksaanwijzing
+Installation
 
-1. hernoem de map-naam naar uw theme-naam.
-2. hernoem de .info-file naar "uw-theme-naam".info.
-3. editeer de .info-file en pas name en description aan.
-4. editeer de template.php-file en hernoem g_raph__breadcrumb naar "uw-theme-naam"_breadcrumb.
+1. Rename folder to <theme_name>.
+2. Rename .info-file to <theme_name>.info.
+3. Edit .info-file and fill in name and description.
+4. Edit template.php-file and rename g_raph__breadcrumb to <theme_name>_breadcrumb.
 
-Klaar is kees!
+Ready to go!
