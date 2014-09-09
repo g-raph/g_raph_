@@ -1,11 +1,101 @@
 // imports
 
-@import "../css/html5reset.css";
-@import "../css/regions.css";
-@import "../css/styleguide.css";
+@import "html5reset.css";
+@import "regions.css";
+@import "styleguide.less";
 
-// fonts
+.font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  &.bold {
+    font-weight: 700;
+  }
+}
+
+.titlefont {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  &.bold {
+    font-weight: 700;
+  }
+}
 
 // vars / classes
 
-// theme
+@basecolor: rgb(4,145,198);
+@seccolor: rgb(242,104,37);
+
+.transit {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+// admin menu hack
+
+body.admin-menu {margin-top:0 !important;}
+#admin-menu {
+  position: fixed;
+  top: 0;
+  left: -140px;
+  left: auto;
+  width: 140px;
+  height: 100%;
+  .transit;
+  overflow: visible;
+  &:hover {
+    right: 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -29px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon-settings.svg) no-repeat 3px center;
+    background-color: #202020;
+    background-size: 20px;
+    border-radius: 50% 0 0 50%;
+    padding: 0;
+    z-index: 99;
+  }
+  ul#admin-menu-menu {
+    > li {
+      display: inline-block;
+      width: 100%;
+      > ul {
+        margin: -28px 0 0 160px;
+        > li > ul {
+          margin: -28px 0 0 160px;
+        }
+      }
+    }
+  }
+}
+
+h1, h2, h3, h4 {
+	.titlefont;
+}
